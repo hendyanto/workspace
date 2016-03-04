@@ -1,1 +1,0 @@
-/home/hendyanto/vim-config/.gvimrc
