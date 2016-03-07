@@ -19,3 +19,8 @@ set statusline+=%*
 :set autoindent    - turns it on
 :set smartindent   - does the right thing (mostly) in programs
 :set cindent       - stricter rules for C programs
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
