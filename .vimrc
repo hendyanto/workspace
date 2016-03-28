@@ -47,7 +47,7 @@ NeoBundle 'm2mdas/phpcomplete-extended'
 
 NeoBundleCheck
 
- call neobundle#end()
+call neobundle#end()
 set rtp+=~/.fzf
 map \t :FZF<CR>
 map \g :NERDTreeToggle<CR>
@@ -61,11 +61,13 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 set lines=45 columns=120
-colorscheme monokaisoda
+colorscheme monokai
 set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 set guifont=Inconsolata
 set rnu
 
+filetype plugin on
+syntax on
 
 function! PhpSyntaxOverride()
   hi! def link phpDocTags  phpDefine
