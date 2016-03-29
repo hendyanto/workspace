@@ -44,6 +44,8 @@ NeoBundle 'm2mdas/phpcomplete-extended'
   NeoBundle 'honza/vim-snippets'
 
   NeoBundle 'scrooloose/nerdtree'
+NeoBundle '2072/PHP-Indenting-for-VIm'
+NeoBundle 'junegunn/vim-easy-align'
 
 NeoBundleCheck
 
@@ -69,6 +71,13 @@ set rnu
 filetype plugin on
 syntax on
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+ xmap ga <Plug>(EasyAlign)
+"
+" " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+ nmap ga <Plug>(EasyAlign)
+
+ autocmd InsertEnter,InsertLeave * set cul!
 function! PhpSyntaxOverride()
   hi! def link phpDocTags  phpDefine
   hi! def link phpDocParam phpType
