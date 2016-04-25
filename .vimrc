@@ -62,8 +62,8 @@ set guioptions+=e
 set guioptions-=T
 set guioptions-=r
 set guioptions-=L
-set lines=45 columns=120
-colorscheme monokai
+set lines=70 columns=240
+colorscheme codeschool
 set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 set guifont=Inconsolata
 set rnu
@@ -82,6 +82,10 @@ function! PhpSyntaxOverride()
   hi! def link phpDocTags  phpDefine
   hi! def link phpDocParam phpType
 endfunction
+
+set fillchars+=vert:\|
+set guifont=Inconsolata-g\ for\ Powerline\ 11
+highlight VertSplit guifg=#000 guibg=#000 gui=NONE
 
 augroup phpSyntaxOverride
   autocmd!
